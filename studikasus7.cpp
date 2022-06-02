@@ -5,6 +5,21 @@ using namespace std;
 class Studikasus{
   public:
     
+    void Input(){
+      cout<<"Masukkan jumlah data : ";
+      cin>>bnyk_data;
+      for(int i=0;i<bnyk_data; i++){
+        cout<<"Masukkan Nama : ";
+        cin>>nama[i];
+        cout<<"Masukkan NIM : ";
+        cin>>nim[i];
+      }
+    }
+    void  carinim(){
+      cout<<"CARI NIM"<<endl;
+      cout<<"masukkan nim : ";
+      cin>>cari_nim;
+    }
     //sorting
     void sort(){
       int tempnim;
