@@ -46,7 +46,25 @@ class Studikasus{
       }
       return -1;
     }
-    
+    //output
+     void SetelahUrut(){
+      cout << "Data setelah diurutkan : "<< endl;
+      for (int i=0; i<bnyk_data; i++ ){
+        cout << nim[i] <<"   "<< nama[i]<<endl;
+      }
+    }
+
+    void output_cari_nim(){
+      int index=search_nim();
+      if(index==-1){
+        cout<<"data tidak ditemukan";
+      }
+      else{
+        cout<<"Nama = "<<nama[index]<<endl;
+        cout<<"Nim = "<<nim[index];
+      }
+      
+    }
       
     
 
